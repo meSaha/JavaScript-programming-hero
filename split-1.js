@@ -1,3 +1,4 @@
+// 21-3 How to split, slice, substr, substring, concat, join
 const text= "JavaScript can also be used to create server-side applications and mobile applications." ;
 const parts = text.split(' ');
 const sentences = text.split('.')
