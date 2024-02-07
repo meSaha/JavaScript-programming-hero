@@ -1,0 +1,53 @@
+<!-- 25-2 Add onclick handler directly or via javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM EVENTS</title>
+</head>
+<body>
+    <h1>DoM er Ajke special Events</h1>
+    <button onclick="console.log(7)">Click Me</button>
+    <button onclick="console.log(65)">Another button</button>
+    <br>
+    <!-- Option 1 -->
+    <button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
+
+    <!-- Option 2 -->
+    <button onclick="makeRed()">Make Red</button>
+
+    <!-- Option 3 -->
+    <button id="make-blue">Make Blue</button> 
+
+
+<!-- 25-3 Different Ways To Use AddEventListener On A Button -->
+    <!-- Option 4 -->
+    <button id="make-purple">Make Purple</button>
+
+
+    <!-- Option 5 -->
+    <button id="make-pink">Make Pink</button>
+
+    <!-- Option 6 -->
+    <button id="make-green">Make Green</button>
+
+    <!-- Option 7 Most usable all time -->
+    <button id="make-goldenrod">Make GoldenRod</button>
+
+    
+    <script>
+        // document.getElementById('make-golden',function(){})
+        document.getElementById('make-goldenrod').addEventListener('click', function(){})
+
+        
+        
+        
+    </script> 
+
+    <script src="jscript/event.js"></script>
+    
+
+      
+</body>
+</html>
