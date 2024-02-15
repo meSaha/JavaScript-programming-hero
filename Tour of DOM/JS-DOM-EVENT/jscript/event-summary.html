@@ -1,0 +1,30 @@
+<!-- 25-4 Most Common Ways To Set Event Handlers -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Summary</title>
+</head>
+<body>
+    <h1>Final Event Handlers</h1>
+    <h3 id="handler-status">Default text</h3>
+    <button onclick="handelOnClick ()">Handle Event by Add onclick Function</button>
+    <button id="event-lisenter">handle event by addEven Listener</button>
+    <script>
+        function handelOnClick(){
+            // console.log('button clicked')
+            const handlerstatus = document.getElementById('handler-status');
+            handlerstatus.innerText = 'Handled by function attached on onclick attribute';
+        }
+
+        // option 2
+        document.getElementById('event-lisenter').addEventListener('click',function(){
+            const handlerstatus = document.getElementById('handler-status');
+            handlerstatus.innerText = 'Text updated by ad'
+
+        })
+    </script>
+    
+</body>
+</html>
